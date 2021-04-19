@@ -8,7 +8,7 @@
         "Telegram Bot",
         "Geez BOTs"
     ],
-    "channel": "t.me/Vckyouuu",
+    "channel": "https://t.me/Vckyouuu",
     "repository": "https://github.com/Vckyou/GeezMusicDownloader",
     "success_url": "https://t.me/GeezDownloaderBot",
     "env": {
