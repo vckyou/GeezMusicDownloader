@@ -15,7 +15,7 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 600 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@Geez.on_message(filters.command('song'))
+@Geez.on_message(filters.command('lagu'))
 def song(client, message):
 
     user_id = message.from_user.id 
