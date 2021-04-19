@@ -6,7 +6,7 @@ import requests
 import wget
 from pyrogram import filters
 
-from GeezMusic import geez
+from GeezMusic import Geez
 
 def get_arg(message):
     msg = message.text
@@ -17,7 +17,7 @@ def get_arg(message):
     return " ".join(split[1:])
 
 
-@geez.on_message(filters.command("saavn"))
+@Geez.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
