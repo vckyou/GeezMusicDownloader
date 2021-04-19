@@ -1,12 +1,12 @@
 # Plugin by @Mr_Dark_Prince
-# Infinity BOTs <https://t.me/Infinity_BOTs>
+# Support Channel @Vckyouuu
 
 import os
 import requests
 import aiohttp
 import youtube_dl
 
-from GeezMusic import geez as app
+from GeezMusic import geezbot as app
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Menemukan Info Lagu!...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -44,17 +44,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Tidak ditemukan apa pun.\n\n Coba kata kunci lain atau mungkin mengejanya dengan benar."
         )
         print(str(e))
         return
-    m.edit("Downloading...")
+    m.edit("Sedang Mengupload...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '@Infinity_BOTs'
+        rep = '@Vckyouuu'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
