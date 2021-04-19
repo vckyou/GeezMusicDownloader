@@ -7,7 +7,7 @@ import aiofiles
 import aiohttp
 from pyrogram import filters
 
-from GeezMusic import geez as app
+from GeezMusic import Geez as app
 
 ARQ = "https://thearq.tech/"
 
@@ -31,7 +31,7 @@ async def download_song(url):
     return song_name
 
 
-@geez.on_message(filters.command("deezer"))
+@Geez.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("What's the song you want to download 🧐")
