@@ -31,7 +31,7 @@ async def download_song(url):
     return song_name
 
 
-@app.on_message(filters.command("deez"))
+@app.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Lagu apa yang ingin kamu download😶 🧐")
