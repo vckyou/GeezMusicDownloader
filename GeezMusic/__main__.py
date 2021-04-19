@@ -1,7 +1,6 @@
 # Support Channel @Vckyouuu
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
-from GeezMusic.plugins import *
 from pyrogram import idle, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from GeezMusic import Geez as app
