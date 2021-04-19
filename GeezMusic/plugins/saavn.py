@@ -1,5 +1,4 @@
-# Infinity BOTs <https://t.me/Infinity_BOTs>
-# @ImJanindu
+# Support Channel @Vckyouuu
 
 import os
 
@@ -7,7 +6,7 @@ import requests
 import wget
 from pyrogram import filters
 
-from JESongBot import Jebot
+from GeezMusic import geez
 
 def get_arg(message):
     msg = message.text
@@ -18,15 +17,15 @@ def get_arg(message):
     return " ".join(split[1:])
 
 
-@Jebot.on_message(filters.command("saavn"))
+@geez.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>What is the song you want?</b>")
+        await message.reply("<b>Lagu apa yang kamu inginkan?</b>")
         return ""
-    m = await message.reply_text("Downloading...")
+    m = await message.reply_text("Sedang Mendownload!...")
     try:
         r = requests.get(
             f"https://jevcplayerbot-saavndl.herokuapp.com/result/?query={args}"
@@ -40,7 +39,7 @@ async def song(client, message):
     file = wget.download(slink)
     ffile = file.replace("mp4", "m4a")
     os.rename(file, ffile)
-    await m.edit("Uploading...")
+    await m.edit("Proses Mengupload!...")
     await message.reply_audio(audio=ffile, title=sname, performer=ssingers)
     os.remove(ffile)
     await m.delete()
