@@ -1,16 +1,16 @@
 {
-    "name": "JE Song Bot",
-    "description": "A bot that can download songs.",
-    "logo": "https://telegra.ph/file/172120c93b52738be277b.jpg",
+    "name": "Geez Music Download",
+    "description": "Bot yang dapat mengunduh.",
+    "logo": "https://telegra.ph/file/3c1cc237655128f099001.jpg",
     "keywords": [
-        "JESongBot",
-        "Song Downloader",
+        "GeezMusicDownloader",
+        "Music Downloader",
         "Telegram Bot",
-        "JE Bots"
+        "Geez BOTs"
     ],
-    "website": "https://infinityje.com",
-    "repository": "https://github.com/ImJanindu/JESongBot",
-    "success_url": "https://t.me/Infinity_BOTs",
+    "channel": "t.me/Vckyouuu",
+    "repository": "https://github.com/Vckyou/GeezMusicDownloader",
+    "success_url": "https://t.me/GeezDownloaderBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
