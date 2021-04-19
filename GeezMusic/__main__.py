@@ -1,5 +1,4 @@
-# Infinity BOTs <https://t.me/Infinity_BOTs>
-# @ImJanindu
+# Support Channel @Vckyouuu
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from JESongBot.plugins import *
@@ -9,22 +8,20 @@ from JESongBot import Jebot as app
 from JESongBot import LOGGER
 
 pm_start_text = """
-Heya [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
+Heya [{}](tg://user?id={}), Saya Bot Pengunduh Lagu 🎵
 
-Do /help for know my commands
+Ketik/Telan /help untuk mengetahui perintah saya
 
-A bot by @Infinity_BOTs
+By @Vckyouuu
 """
 
 help_text = """
-My commands👇
+Perintah saya👇
 
-- /song <song name>: download songs via Youtube
-- /saavn <song name>: download songs via JioSaavn
-- /deezer <song name>: download songs via Deezer
-- Send youtube url to my pm for download it on audio format
-
-A bot by @Infinity_BOTs
+- /lagu <nama lagu>: unduh lagu melalui Youtube
+- /saavn <nama lagu>: mengunduh lagu melalui JioSaavn
+- /deezer <nama lagu>: mengunduh lagu melalui Deezer
+- Kirim url youtube ke pm saya untuk mendownload music yang anda minta
 """
 
 @app.on_message(filters.command("start"))
@@ -37,10 +34,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Source", url="https://github.com/ImJanindu/JESongBot"
+                        text="Group Support", url="https://t.me/GrupMusik"
                     ),
                     InlineKeyboardButton(
-                        text="Dev", url="https://t.me/ImJanindu"
+                        text="Owner", url="https://t.me/VckyouuBitch"
                     )
                 ]
             ]
@@ -54,5 +51,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("JESongBot is online.")
+LOGGER.info("Geez Music Sudah Online!")
 idle()
