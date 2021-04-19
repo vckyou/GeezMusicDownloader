@@ -31,10 +31,10 @@ async def download_song(url):
     return song_name
 
 
-@app.on_message(filters.command("deezer"))
+@app.on_message(filters.command("deez"))
 async def deezer(_, message):
     if len(message.command) < 2:
-        await message.reply_text("What's the song you want to download 🧐")
+        await message.reply_text("Lagu apa yang ingin kamu download😶 🧐")
         return
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
