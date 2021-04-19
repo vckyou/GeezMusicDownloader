@@ -4,8 +4,8 @@ from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from JESongBot.plugins import *
 from pyrogram import idle, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from JESongBot import Jebot as app
-from JESongBot import LOGGER
+from GeezMusic import Geez as app
+from GeezMusic import LOGGER
 
 pm_start_text = """
 Heya [{}](tg://user?id={}), Saya Bot Pengunduh Lagu 🎵
@@ -19,8 +19,8 @@ help_text = """
 Perintah saya👇
 
 - /lagu <nama lagu>: unduh lagu melalui Youtube
-- /saavn <nama lagu>: mengunduh lagu melalui JioSaavn
-- /deezer <nama lagu>: mengunduh lagu melalui Deezer
+- /savn <nama lagu>: mengunduh lagu melalui JioSaavn
+- /deez <nama lagu>: mengunduh lagu melalui Deezer
 - Kirim url youtube ke pm saya untuk mendownload music yang anda minta
 """
 
