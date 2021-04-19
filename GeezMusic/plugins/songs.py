@@ -6,7 +6,7 @@ import requests
 import aiohttp
 import youtube_dl
 
-from GeezMusic import geez as app
+from GeezMusic import Geez as app
 from pyrogram import filters, Client
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputTextMessageContent
@@ -15,7 +15,7 @@ def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 600 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
-@geez.on_message(filters.command('song'))
+@Geez.on_message(filters.command('song'))
 def song(client, message):
 
     user_id = message.from_user.id 
