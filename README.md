@@ -1,15 +1,15 @@
-# JE Song Bot
-## A telegram bot that can download songs
+# Geez Music Downloader
+## Bot telegram yang dapat mengunduh lagu
 <p align="center">
-  <img src="https://telegra.ph/file/172120c93b52738be277b.jpg">
+  <img src="https://telegra.ph/file/3c1cc237655128f099001.jpg">
 </p>
 
-Reach me on Telegram [Song Bot 🎵](https://t.me/jesongbot)
+Hubungi saya di Telegram [Music Bot 🎵](https://t.me/GeezMusicDownloaders)
 
-## How To Host
+## Bagaimana Menjadi Host
 
-The easiest way to deploy this Song Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ImJanindu/JESongBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+Cara termudah untuk menerapkan Bot Lagu ini
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Vckyou/GeezMusicDownloader"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 ## Credits
 
