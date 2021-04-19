@@ -1,4 +1,4 @@
-# Infinity BOTs <https://t.me/Infinity_BOTs>
+# Support Channel @Vckyouuu
 
 import os
 API_ID = int(os.getenv("API_ID"))
