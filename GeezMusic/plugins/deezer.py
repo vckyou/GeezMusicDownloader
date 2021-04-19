@@ -7,7 +7,7 @@ import aiofiles
 import aiohttp
 from pyrogram import filters
 
-from JESongBot import Jebot as app
+from GeezMusic import geez as app
 
 ARQ = "https://thearq.tech/"
 
