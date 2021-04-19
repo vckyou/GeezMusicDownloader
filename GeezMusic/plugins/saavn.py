@@ -17,7 +17,7 @@ def get_arg(message):
     return " ".join(split[1:])
 
 
-@Geez.on_message(filters.command("saavn"))
+@Geez.on_message(filters.command("savn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
